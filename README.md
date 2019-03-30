@@ -15,3 +15,6 @@ Dependencies: Pillow v5.4.1 (a PIL fork)
 Given the challenge to find 12 differences:  
 ![](github_media/findthediff.png) ![](github_media/diff.png)
 
+## Example 2
+![](github_media/findthediff2.png) ![](github_media/diff2.png)
+

@@ -18,7 +18,7 @@ from sys import argv,exit
 ## Input: two images as pixels list
 ## Output: a pixels list of the new image with different parts coloured in red.
 def imagediff(pixels1, pixels2):
-    epsilon = 20
+    epsilon = 15
     pixelsdiff = []
     for i in range(0,min(len(pixels1),len(pixels2))):
         pixeltemp = []
@@ -55,7 +55,7 @@ def imagediff2(pixels1, pixels2):
     return pixelsdiff
 
 # Version 3 - in order to improve it and decrease the false-positive the function
-# calculates the average of all 9 nearest pixels (a square).
+# calculates the average of all 3 nearest pixels
 ## imagediff fuctions colors in red the differences between two images.
 ## Input: two images as pixels list
 ## Output: a pixels list of the new image with different parts coloured in red.
@@ -63,7 +63,6 @@ def imagediff3(pixels1, pixels2):
     epsilon = 15
     pixelsdiff = []
     for i in range(1,min(len(pixels1),len(pixels2))-1):
-        pixeltemp = []
         sum1 = pixels1[i-1][0]+pixels1[i-1][1]+pixels1[i-1][2]+pixels1[i][0]+pixels1[i][1]+pixels1[i][2]+pixels1[i+1][0]+pixels1[i+1][1]+pixels1[i+1][2]   
         sum2 = pixels2[i-1][0]+pixels2[i-1][1]+pixels2[i-1][2]+pixels2[i][0]+pixels2[i][1]+pixels2[i][2]+pixels2[i+1][0]+pixels2[i+1][1]+pixels2[i+1][2]
 
