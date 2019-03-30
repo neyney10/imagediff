@@ -11,3 +11,7 @@ Last Updated: 30/03/2019
 Python Version: 2.7.10  
 Dependencies: Pillow v5.4.1 (a PIL fork)  
 
+## Example:
+Given the challenge to find 12 differences:  
+![](github_media/findthediff.png) ![](github_media/diff.png)
+

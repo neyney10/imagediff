@@ -50,7 +50,7 @@ def imagediff2(pixels1, pixels2):
             pixelsdiff.append(pixels1[i])
         else:
             pixelsdiff.append((255,15,15))
-            #print str(pixels1[i]) + " | " +str(pixels2[i])
+
 
     return pixelsdiff
 
